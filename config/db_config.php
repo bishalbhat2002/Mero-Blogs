@@ -34,7 +34,8 @@ try {
           phone VARCHAR(20) DEFAULT NULL UNIQUE,
           address VARCHAR(255) DEFAULT NULL,
           created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-          )";
+          ) ENGINE=InnoDB";
+
 
     $conn->query($sql);
 //     echo "<br>Users Table Created Successfully...";
@@ -47,7 +48,7 @@ try {
     $sql = "CREATE TABLE if not exists categories (
           categoryId INT AUTO_INCREMENT PRIMARY KEY,
           categoryName VARCHAR(100) NOT NULL UNIQUE
-          )";
+          ) ENGINE=InnoDB";
 
     $conn->query($sql);
 //     echo "<br>Categories Table Created Successfully...";
@@ -65,8 +66,10 @@ try {
                categoryId INT NOT NULL,
                userId INT NOT NULL,
                createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-               updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-               )";
+               updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+               CONSTRAINT fk_blog_user FOREIGN KEY (userId) REFERENCES users(userId) ON DELETE CASCADE ON UPDATE CASCADE,
+               CONSTRAINT fk_blog_category FOREIGN KEY (categoryId) REFERENCES categories(categoryId) ON DELETE CASCADE ON UPDATE CASCADE
+        ) ENGINE=InnoDB";
 
     $conn->query($sql);
 //     echo "<br>Blogs Table Created Successfully...";
