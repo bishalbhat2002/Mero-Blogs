@@ -127,8 +127,7 @@
                      <div class="no-blogs-container-home">
 
                          <div class="no-blogs-home">
-                              <p class="">No blogs found. Please check back later</p>
-                              <span class="no-blog-or">or,</span>
+                              <p class="">No blogs found.</p>
                               <a href="create-blog.php" class="create-blog-btn">Create a new blog</a>.
                          </div>
                     </div>
