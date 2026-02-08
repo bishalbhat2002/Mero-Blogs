@@ -4,21 +4,21 @@
 require_once '../db_connect.php';
 
 #Inserting default Project users -> Bishal Bhatta, Chiranji Bista, Cretika chand, Dinesh Thagunna, Madan budha, Prabhat Thagunna.
-// try {
-//     $sql = "INSERT INTO users (name, email, password, photo, gender, phone, address) VALUES
-//                     ('Prabhat Thagunna', 'prabhatthagunna@gmail.com', 'password123', NULL, 'male', '9812045678', 'Mahendranagar, Kanchanpur, Nepal'),
-//                     ('Dinesh Thagunna', 'dineshthagunna@gmail.com', 'password123', NULL, 'male', '9824456789', 'Mahendranagar, Kanchanpur, Nepal'),
-//                     ('Cretika Chand', 'cretikachand@gmail.com', 'password123', NULL, 'female', '9838567890', 'Mahendranagar, Kanchanpur, Nepal'),
-//                     ('Chiranjibi Bista', 'chiranjibibista@gmail.com', 'password123', NULL, 'male', '9845678901', 'Mahendranagar, Kanchanpur, Nepal'),
-//                     ('Madan Budha', 'madanbudha@gmail.com', 'password123', NULL, 'male', '9856780102', 'Mahendranagar, Kanchanpur, Nepal'),
-//                     ('Bishal Bhatta', 'bishalbhatta@gmail.com', 'password123', NULL, 'male', '9837890123', 'Mahendranagar, Kanchanpur, Nepal')";
+try {
+    $sql = "INSERT INTO users (name, email, password, photo, gender, phone, address) VALUES
+                    ('Prabhat Thagunna', 'prabhatthagunna@gmail.com', 'password123', NULL, 'male', '9812045678', 'Mahendranagar, Kanchanpur, Nepal'),
+                    ('Dinesh Thagunna', 'dineshthagunna@gmail.com', 'password123', NULL, 'male', '9824456789', 'Mahendranagar, Kanchanpur, Nepal'),
+                    ('Cretika Chand', 'cretikachand@gmail.com', 'password123', NULL, 'female', '9838567890', 'Mahendranagar, Kanchanpur, Nepal'),
+                    ('Chiranjibi Bista', 'chiranjibibista@gmail.com', 'password123', NULL, 'male', '9845678901', 'Mahendranagar, Kanchanpur, Nepal'),
+                    ('Madan Budha', 'madanbudha@gmail.com', 'password123', NULL, 'male', '9856780102', 'Mahendranagar, Kanchanpur, Nepal'),
+                    ('Bishal Bhatta', 'bishalbhatta@gmail.com', 'password123', NULL, 'male', '9837890123', 'Mahendranagar, Kanchanpur, Nepal')";
 
-//     $conn->query($sql);
-//     echo "<br>Demo User Data Inserted Successfully...";
+    $conn->query($sql);
+    echo "<br>Demo User Data Inserted Successfully...";
 
-// } catch (Exception $e) {
-//     die("<b>Error while inserting User Demo records: </b>" . $e->getMessage());
-// }
+} catch (Exception $e) {
+    die("<b>Error while inserting User Demo records: </b>" . $e->getMessage());
+}
 
 #Instering Dummy blogs..
 try {

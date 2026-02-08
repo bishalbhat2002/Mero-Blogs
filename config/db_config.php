@@ -76,52 +76,34 @@ try {
 
 echo "<br>All tables are already created successfully...";
 
-#Inserting default user
-
-// try {
-//     $sql = "INSERT INTO users (name, email, password, photo, gender, phone, address) VALUES (
-//                'test user',
-//                'testuser@gmail.com',
-//                'testuser',
-//                'https://cdnb.artstation.com/p/assets/images/images/048/114/445/large/luupaloop-illustration-9.jpg',
-//                'male',
-//                CONCAT('98', FLOOR(10000000 + RAND()*90000000)),
-//                'Kathmandu, Nepal'
-//                )";
-
-//     $conn->query($sql);
-//     echo "<br>Demo User Data Inserted Successfully...";
-// } catch (Exception $e) {
-//     die("<b>Error while inserting User Demo records: </b>" . $e->getMessage());
-// }
 
 #Inserting default categories
-// try {
-//     $sql = "INSERT INTO categories (categoryName) VALUES
-//     ('Technology'),
-//     ('Health'),
-//     ('Travel'),
-//     ('Food'),
-//     ('Education'),
-//     ('Lifestyle'),
-//     ('Entertainment'),
-//     ('Finance'),
-//     ('Sports'),
-//     ('Science'),
-//     ('Fashion'),
-//     ('Music'),
-//     ('Movies'),
-//     ('Books'),
-//     ('Gaming'),
-//     ('Photography'),
-//     ('Environment'),
-//     ('DIY & Crafts'),
-//     ('News'),
-//     ('Personal Development'),
-//     ('Other')";
+try {
+    $sql = "INSERT INTO categories (categoryName) VALUES
+    ('Technology'),
+    ('Health'),
+    ('Travel'),
+    ('Food'),
+    ('Education'),
+    ('Lifestyle'),
+    ('Entertainment'),
+    ('Finance'),
+    ('Sports'),
+    ('Science'),
+    ('Fashion'),
+    ('Music'),
+    ('Movies'),
+    ('Books'),
+    ('Gaming'),
+    ('Photography'),
+    ('Environment'),
+    ('DIY & Crafts'),
+    ('News'),
+    ('Personal Development'),
+    ('Other')";
 
-//     $conn->query($sql);
-//     echo "<br>Categories Inserted Successfully...";
-// } catch (Exception $e) {
-//     die("<b>Error while inserting Category records: </b>" . $e->getMessage());
-// }
+    $conn->query($sql);
+    echo "<br>Categories Inserted Successfully...";
+} catch (Exception $e) {
+    die("<b>Error while inserting Category records: </b>" . $e->getMessage());
+}
