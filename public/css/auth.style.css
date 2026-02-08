@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: #e3e3e3;
+}
+/* Navbar */
+.navbar {
+  height: 60px;
+  background: #505050;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navbar h1 {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+/* Login container */
+.wrapper {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+.login-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #111827;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.form-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #1e4ed8;
+}
+.extra {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #6b7280;
+}
+.extra a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* register code start */
+.h-full {
+  height: 100vh;
+}
+.w-full {
+  width: 100%;
+  padding-top: 4rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.registration-wrapper .register-form {
+  /* width: clamp(900px, 1000px, 1200px); */
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 1.5rem;
+}
+
+/* Make button & extra full width */
+.registration-wrapper .btn,
+.registration-wrapper .extra {
+  grid-column: span 2;
+  text-align: center;
+}
+
+/* Small devices */
+@media (max-width: 768px) {
+  .registration-wrapper .register-form {
+    grid-template-columns: 1fr;
+  }
+
+  .registration-wrapper .btn,
+  .registration-wrapper .extra {
+    grid-column: span 1;
+  }
+}
+
+.register-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding-top: 2rem;
+}
+.register-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #111827;
+}
+.form-group {
+  margin-bottom: 15px;
+  width: 19rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.form-group input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.form-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #1e4ed8;
+}
+.extra {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #6b7280;
+}
+.extra a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* Error and success message show code start */
+.message {
+  font-size: 14px;
+  padding: 12px 16px 10px 16px;
+  width: 320px;
+  border-radius: 6px 6px 6px 0;
+  position: fixed;
+  top: 80px;
+  right: 24px;
+  color: #1f2937;
+  display: flex;
+  gap: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Message text */
+.message p {
+  color: #374151;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+/* Center icon */
+.center {
+  display: grid;
+  place-content: center;
+}
+
+/* Error message */
+#error-message {
+  background-color: #ffa8a8;
+}
+
+#error-icon {
+  color: #dc2626;
+  font-size: 18px;
+}
+
+/* Success message */
+#success-message {
+  background-color: #90f3b3;
+}
+
+#success-icon {
+  color: #16a34a;
+  font-size: 18px;
+}
+
+/* Progress bar animation */
+#error-message::before,
+#success-message::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 4px;
+  width: 0;
+  border-radius: 0 6px 6px 6px;
+  animation: width-grow 3s ease-in-out forwards;
+}
+
+#error-message::before {
+  background-color: #dc2626;
+}
+
+#success-message::before {
+  background-color: #16a34a;
+}
+
+.error-msg {
+  font-size: 13px;
+  color: red;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+/* Animation */
+@keyframes width-grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Error and success message show code end */
+.relative {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  border: none;
+  background: url("/mero-blogs/public/images/eye-close.png") no-repeat center;
+  background-size: contain;
+}
