@@ -76,11 +76,11 @@
       <form action="" method="POST">
         <div class="form-group">
           <label>Email</label>
-          <input type="text" name="email" value="" placeholder="Enter your email" required />
+          <input type="text" name="email" placeholder="Enter your email" value="prabhatthagunna@gmail.com" required />
         </div>
         <div class="form-group relative">
           <label>Password</label>
-          <input type="password" name="password" id="password" value="" placeholder="Enter your password" required />
+          <input type="password" name="password" id="password" value="password123" placeholder="Enter your password" required />
           <button id="toggle-password" type="button" class="toggle-password"></button>
         </div>
 
