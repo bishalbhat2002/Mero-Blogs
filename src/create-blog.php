@@ -15,8 +15,8 @@
     $userId     = $_SESSION['userId'];
 
     // Validate Title
-    if (strlen($title) < 10 || strlen($title) > 60) {
-        header("Location: create-blog.php?error=" . urlencode("Title must be 10-60 characters."));
+    if (strlen($title) < 10 || strlen($title) > 255) {
+        header("Location: create-blog.php?error=" . urlencode("Title must be 10-255 characters."));
         exit();
     }
 

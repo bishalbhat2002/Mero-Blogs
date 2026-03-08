@@ -76,7 +76,7 @@
       <form action="" method="POST">
         <div class="form-group">
           <label>Email</label>
-          <input type="text" name="email" placeholder="Enter your email" value="prabhatthagunna@gmail.com" required />
+          <input type="text" name="email" placeholder="Enter your email" value="bishal@gmail.com" required />
         </div>
         <div class="form-group relative">
           <label>Password</label>

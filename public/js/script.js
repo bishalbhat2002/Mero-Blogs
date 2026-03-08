@@ -35,9 +35,9 @@ if (createBlogForm) {
     const content = document.getElementById("content").value.trim();
 
     // Title validation
-    if (title.length < 10 || title.length > 60) {
+    if (title.length < 10 || title.length > 255) {
       document.getElementById("titleError").textContent =
-        "Title must be 10-60 characters.";
+        "Title must be 10-255 characters.";
       valid = false;
     }
 
@@ -177,7 +177,7 @@ if (updateBlogForm) {
     const image = updateBlogForm.image.files[0]; // optional in update
 
     // Title
-    if (title.length < 10 || title.length > 60) {
+    if (title.length < 10 || title.length > 255) {
       document.getElementById("titleError").textContent =
         "Title must be 10–60 characters long.";
       valid = false;

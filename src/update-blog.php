@@ -24,8 +24,8 @@
 
     /* ---------------- VALIDATION ---------------- */
 
-    if (strlen($title) < 10 || strlen($title) > 60) {
-        header("Location:?id=$blogId&error=Title must be 10-60 characters.");
+    if (strlen($title) < 10 || strlen($title) > 255) {
+        header("Location:?id=$blogId&error=Title must be 10-255 characters.");
         exit();
     }
 

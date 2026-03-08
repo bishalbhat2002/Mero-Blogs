@@ -146,20 +146,20 @@
 
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Enter your email" value="" required />
+    <input type="text" id="email" name="email" placeholder="Enter your email" value="bishal@gmail.com" required />
     <p class="error-msg" id="emailError"></p>
   </div>
 
   <div class="form-group relative">
     <label for="password">Password</label>
-    <input type="password" id="password" name="password" placeholder="Create a password" value="" required />
+    <input type="password" id="password" name="password" placeholder="Create a password" value="password123" required />
     <button id="toggle-password" type="button" class="toggle-password"></button>
     <p class="error-msg" id="passwordError"></p>
   </div>
 
   <div class="form-group relative">
     <label for="confirm_password">Confirm Password</label>
-    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" value="" required />
+    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" value="password123" required />
     <button id="toggle-confirm-password" type="button" class="toggle-password"></button>
     <p class="error-msg" id="confirmError"></p>
   </div>
@@ -168,7 +168,7 @@
     <label for="gender">Gender</label>
     <select id="gender" name="gender" required>
       <option value="" selected disabled>Select gender</option>
-      <option value="male">Male</option>
+      <option value="male" >Male</option>
       <option value="female">Female</option>
       <option value="other">Other</option>
     </select>
@@ -183,7 +183,7 @@
 
   <div class="form-group">
     <label for="address">Address</label>
-    <input type="text" id="address" name="address" placeholder="Your address" value="" required />
+    <input type="text" id="address" name="address" placeholder="Your address" value="Mnr, kanchanpur" required />
     <p class="error-msg" id="addressError"></p>
   </div>
 
