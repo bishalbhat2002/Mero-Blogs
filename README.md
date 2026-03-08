@@ -64,4 +64,48 @@ Users can manage their personal information including:
 - Apache (XAMPP)
 
 
+---
 
+# 📁 Project Structure
+
+```
+Mero-Blogs/
+    ├── config/
+    │   ├── seeders/
+    │   │   ├── database-seed.php
+    │   ├── db_config.php
+    │   ├── db_connect.php
+    ├── public/
+    │   ├── css/
+    │   │   ├── auth.style.css
+    │   │   ├── style.css
+    │   ├── images/
+    │   │   ├── boy.jpg
+    │   │   ├── eye-close.png
+    │   │   ├── eye-open.png
+    │   ├── js/
+    │   │   ├── registerScript.js
+    │   │   └── script.js
+    ├── src/
+    │   ├── authenticator.php
+    │   ├── change-password.php
+    │   ├── create-blog.php
+    │   ├── delete-blog.php
+    │   ├── deletePhoto.php
+    │   ├── edit-profile.php
+    │   ├── home.php
+    │   ├── logout.php
+    │   ├── manage-blogs.php
+    │   ├── page404.php
+    │   ├── profile.php
+    │   ├── read-blog.php
+    │   ├── search-blogs.php
+    │   ├── show-message.php
+    │   ├── update-blog.php
+    │   ├── view-user.php
+    ├── uploads/
+    ├── index.php
+    ├── login.php
+    ├── README.md
+    └── register.php
+```
