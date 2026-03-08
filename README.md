@@ -4,13 +4,13 @@ A simple blogging platform built using **PHP, MySQL, HTML, CSS, and JavaScript**
 
 ---
 
-## Project Demo
+<!-- ## Project Demo
 - Since the project is not deployed online, a video demonstration is available on YouTube.
 
 ### Watch Project Demo video:
-https://youtu.be/c4v0d0vCfNs
+https://youtu.be/c4v0d0vCfNs -->
 
----
+<!-- --- -->
 
 ## Features
 
