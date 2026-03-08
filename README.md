@@ -1,8 +1,14 @@
 # Blogging Website
 
-A simple blogging platform built using **PHP, MySQL, HTML, CSS, and JavaScript**. This project allows users to create, manage, and explore blogs easily. It was developed as a college project to help students share ideas, write articles, and read content from others.
+A simple blogging platform built using **PHP, MySQL, HTML, CSS, and JavaScript** to help friends in their minor project for college. This project allows users to create, manage, and explore blogs easily. It was developed as a college project to help students share ideas, write articles, and read content from others.
 
 ---
+
+## Project Demo
+- Since the project is not deployed online, a video demonstration is available on YouTube.
+
+### Watch Project Demo video:
+[youtube video link here...]
 
 ## Features
 
