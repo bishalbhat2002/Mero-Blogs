@@ -10,6 +10,8 @@ A simple blogging platform built using **PHP, MySQL, HTML, CSS, and JavaScript**
 ### Watch Project Demo video:
 [youtube video link here...]
 
+---
+
 ## Features
 
 ### User Authentication
